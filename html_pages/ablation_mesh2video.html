@@ -37,8 +37,8 @@
 
 			<div class="row pt-1 justify-content-sm-center">
 				  
-				<a class="sm-1 mx-1 btn btn-primary text-center" href="../index.html" role="button">Our Result (Mesh to Video)</a>
-				<a class="sm-1 mx-1 btn btn-primary text-center" href="./index_audio2video.html" role="button">Our Results (Audio to Video)</a>
+				<a class="sm-1 mx-1 btn btn-primary text-center" href="../index.html" role="button">Our Result (Audio to Video)</a>
+				<a class="sm-1 mx-1 btn btn-primary text-center" href="./index_audio2video.html" role="button">Our Results (Mesh to Video)</a>
 				<!-- <a class="sm-1 mx-1 btn btn-primary" href="dataset.html" role="button">Dataset</a> -->
 
 			</div>			
@@ -80,9 +80,10 @@
 			
 			<h2 class="pt-4"><p class="text-center">Ablation Study (Mesh to Video)</p></h2>
 
-			<p class="lead">We introduce a fully automated method for creating cinemagraphs from text descriptions — an especially challenging task when prompts feature imaginary elements and artistic styles, given the complexity
-				 of interpreting the semantics and motions of these images. Below we shows a grid of paris of input text prompt (top) and their corresponding generated cinemagraphs (bottom).
+			<p class="lead">Given a sequence of input untextured meshes, we study the role of (1) depth and normal maps and (2) textured meshes for generating videos. We compare our full method that uses depth, normal maps and textured rendering of the meshes as input to generate video, to (1) Ours (w/o depth and normal maps) which does not use additonal depth and normal map conditioning as input, and (2) Ours (w/o textured mesh), which only uses rendering of untextured meshes as input
+				. We also provide the corresponding ground-truth video for comparison.
 			</p>
+			<p><strong>Note:</strong> The background of each actor in the training sequnece is not constant (moves because camera is not still across entire training video). This leads to sight change in background in the generated results.</p>
 
 			<!-- Our results in table from plug-and-play -->
 			<table width="1200" style="margin-left: -55px;" align="center">

@@ -36,9 +36,10 @@
 		<div class="container">
 
 			<div class="row pt-1 justify-content-sm-center">
-				  
-				<a class="sm-1 mx-1 btn btn-primary text-center" href="./index.html" role="button">Our Result (Mesh to Video)</a>
-				<a class="sm-1 mx-1 btn btn-primary text-center" href="./html_pages/index_audio2video.html" role="button">Our Results (Audio to Video)</a>
+				
+				
+				<a class="sm-1 mx-1 btn btn-primary text-center" href="./index.html" role="button">Our Result (Audio to Video)</a>
+				<a class="sm-1 mx-1 btn btn-primary text-center" href="./html_pages/index_audio2video.html" role="button">Our Results (Mesh to Video)</a>
 				<!-- <a class="sm-1 mx-1 btn btn-primary" href="dataset.html" role="button">Dataset</a> -->
 
 			</div>			
@@ -78,11 +79,12 @@
 
 
 			
-			<h2 class="pt-4"><p class="text-center">Our Results</p></h2>
+			<h2 class="pt-4"><p class="text-center">Our Results (Audio to Video)</p></h2>
 
-			<p class="lead">We introduce a fully automated method for creating cinemagraphs from text descriptions — an especially challenging task when prompts feature imaginary elements and artistic styles, given the complexity
-				 of interpreting the semantics and motions of these images. Below we shows a grid of paris of input text prompt (top) and their corresponding generated cinemagraphs (bottom).
+			<p class="lead">We introduce a method to generate co-speech gesture video of an actor from audio input - an especially challenging task to generate realistic hands when only a relatively small video of the actor is present during training. 
+				Below we shows results for 4 different actors. Please play the <strong>audio</strong> in each of the video to listen to the input speech.
 			</p>
+			<p><strong>Note:</strong> The background of each actor in the training sequnece is not constant (moves because camera is not still across entire training video). This leads to sight change in background in the generated results.</p>
 
 			<!-- Our results in table from plug-and-play -->
 			<table width="1200" style="margin-left: -55px;" align="center">
@@ -92,128 +94,115 @@
 					<th>C</th> -->
 						<tr>
 	
-	
-	 <th style="text-align: center; padding: 10px;">
-		<!-- <div class="row justify-content-sm-center">
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 50px">Input Mesh</p>
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Textured Mesh</p>
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Generated Video</p>
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 100px">Ground Truth Video</p>
-		</div> -->
-		<div style="width: 1000px; margin: auto; border-bottom: 1px solid #000;">
-			<div class="row justify-content-sm-center" style="display: flex; width: 1000px; height: 40px; margin-left: 0px">
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Input Mesh</p>
-				</div>
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Textured Mesh</p>
-				</div>
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Generated Video</p>
-				</div>
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Ground Truth Video</p>
-				</div>
-			</div>
-			<video autoplay="autoplay" controls="controls" loop="loop" muted="muted" src="./all_results/our_results/oliver.mp4" style="width:1000px; border: 5px solid #000;" type="video/mp4"></video>
-			<p style="font-family: Chalkduster; font-size: 20px; margin-top: 5px;">Oliver</p>
-		</div>
-	</th>
-</tr>
 
-<tr> <td><br></td> </tr>
-		
-	<th style="text-align: center; padding: 10px;">
-		<!-- <div class="row justify-content-sm-center">
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 50px">Input Mesh</p>
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Textured Mesh</p>
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Generated Video</p>
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 100px">Ground Truth Video</p>
-		</div> -->
-		<div style="width: 1000px; margin: auto; border-bottom: 1px solid #000;">
-			<div class="row justify-content-sm-center" style="display: flex; width: 1000px; height: 40px; margin-left: 0px">
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Input Mesh</p>
-				</div>
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Textured Mesh</p>
-				</div>
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Generated Video</p>
-				</div>
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Ground Truth Video</p>
-				</div>
-			</div>
-			<video autoplay="autoplay" controls="controls" loop="loop" muted="muted" src="./all_results/our_results/conan.mp4" style="width:1000px; border: 5px solid #000;" type="video/mp4"></video>
-			<p style="font-family: Chalkduster; font-size: 20px; margin-top: 5px;">Conan</p>
-		</div>
-	</th>
-	</tr>
-
-<tr> <td><br></td> </tr>
-
-	<th style="text-align: center; padding: 10px;">
-		<!-- <div class="row justify-content-sm-center">
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 50px">Input Mesh</p>
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Textured Mesh</p>
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Generated Video</p>
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 100px">Ground Truth Video</p>
-		</div> -->
-		<div style="width: 1000px; margin: auto; border-bottom: 1px solid #000;">
-			<div class="row justify-content-sm-center" style="display: flex; width: 1000px; height: 40px; margin-left: 0px">
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Input Mesh</p>
-				</div>
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Textured Mesh</p>
-				</div>
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Generated Video</p>
-				</div>
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Ground Truth Video</p>
-				</div>
-			</div>
-			<video autoplay="autoplay" controls="controls" loop="loop" muted="muted" src="./all_results/our_results/seth.mp4" style="width:1000px; border: 5px solid #000;" type="video/mp4"></video>
-			<p style="font-family: Chalkduster; font-size: 20px; margin-top: 5px;">Seth</p>
-		</div>
-	</th>
-	</tr>
-
-
-<tr> <td><br></td> </tr>
-
-	<th style="text-align: center; padding: 10px;">
-		<!-- <div class="row justify-content-sm-center">
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 50px">Input Mesh</p>
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Textured Mesh</p>
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Generated Video</p>
-			<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 100px">Ground Truth Video</p>
-		</div> -->
-		<div style="width: 1000px; margin: auto;">
-			<div class="row justify-content-sm-center" style="display: flex; width: 1000px; height: 40px; margin-left: 0px">
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Input Mesh</p>
-				</div>
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Textured Mesh</p>
-				</div>
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Generated Video</p>
-				</div>
-				<div style="flex: 0 0 25%; text-align: center;">
-					<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Ground Truth Video</p>
-				</div>
-			</div>
-			<video autoplay="autoplay" controls="controls" loop="loop" muted="muted" src="./all_results/our_results/chemistry.mp4" style="width:1000px; border: 5px solid #000;" type="video/mp4"></video>
-			<p style="font-family: Chalkduster; font-size: 20px; margin-top: 5px;">Chemistry</p>
-		</div>
-	</th>
-	</tr>
-
-
-<tr> <td><br></td> </tr>
+							<th style="text-align: center; padding: 10px;">
+								<!-- <div class="row justify-content-sm-center">
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 50px">Input Mesh</p>
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Textured Mesh</p>
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Generated Video</p>
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 100px">Ground Truth Video</p>
+								</div> -->
+								<div style="width: 1000px; margin: auto; border-bottom: 1px solid #000;">
+									<div class="row justify-content-sm-center" style="display: flex; width: 1000px; height: 40px; margin-left: 0px">
+										<div style="flex: 0 0 33%; text-align: center;">
+											<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Input Mesh</p>
+										</div>
+										<div style="flex: 0 0 33%; text-align: center;">
+											<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Textured Mesh</p>
+										</div>
+										<div style="flex: 0 0 33%; text-align: center;">
+											<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Generated Video</p>
+										</div>
+									</div>
+									<video autoplay="autoplay" controls="controls" loop="loop" muted="muted" src="./all_results/our_results_audio/oliver.mp4" style="width:1000px; border: 5px solid #000;" type="video/mp4"></video>
+									<p style="font-family: Chalkduster; font-size: 20px; margin-top: 5px;">Oliver</p>
+								</div>
+							</th>
+						</tr>
+						
+						<tr> <td><br></td> </tr>
+								
+							<th style="text-align: center; padding: 10px;">
+								<!-- <div class="row justify-content-sm-center">
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 50px">Input Mesh</p>
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Textured Mesh</p>
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Generated Video</p>
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 100px">Ground Truth Video</p>
+								</div> -->
+								<div style="width: 1000px; margin: auto; border-bottom: 1px solid #000;">
+									<div class="row justify-content-sm-center" style="display: flex; width: 1000px; height: 40px; margin-left: 0px">
+										<div style="flex: 0 0 33%; text-align: center;">
+											<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Input Mesh</p>
+										</div>
+										<div style="flex: 0 0 33%; text-align: center;">
+											<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Textured Mesh</p>
+										</div>
+										<div style="flex: 0 0 33%; text-align: center;">
+											<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Generated Video</p>
+										</div>
+									</div>
+									<video autoplay="autoplay" controls="controls" loop="loop" muted="muted" src="./all_results/our_results_audio/conan.mp4" style="width:1000px; border: 5px solid #000;" type="video/mp4"></video>
+									<p style="font-family: Chalkduster; font-size: 20px; margin-top: 5px;">Conan</p>
+								</div>
+							</th>
+							</tr>
+						
+						<tr> <td><br></td> </tr>
+						
+							<th style="text-align: center; padding: 10px;">
+								<!-- <div class="row justify-content-sm-center">
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 50px">Input Mesh</p>
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Textured Mesh</p>
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Generated Video</p>
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 100px">Ground Truth Video</p>
+								</div> -->
+								<div style="width: 1000px; margin: auto; border-bottom: 1px solid #000;">
+									<div class="row justify-content-sm-center" style="display: flex; width: 1000px; height: 40px; margin-left: 0px">
+										<div style="flex: 0 0 33%; text-align: center;">
+											<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Input Mesh</p>
+										</div>
+										<div style="flex: 0 0 33%; text-align: center;">
+											<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Textured Mesh</p>
+										</div>
+										<div style="flex: 0 0 33%; text-align: center;">
+											<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Generated Video</p>
+										</div>
+									</div>
+									<video autoplay="autoplay" controls="controls" loop="loop" muted="muted" src="./all_results/our_results_audio/seth.mp4" style="width:1000px; border: 5px solid #000;" type="video/mp4"></video>
+									<p style="font-family: Chalkduster; font-size: 20px; margin-top: 5px;">Seth</p>
+								</div>
+							</th>
+							</tr>
+						
+						
+						<tr> <td><br></td> </tr>
+						
+							<th style="text-align: center; padding: 10px;">
+								<!-- <div class="row justify-content-sm-center">
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 50px">Input Mesh</p>
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Textured Mesh</p>
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 120px">Generated Video</p>
+									<p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px; padding-left: 100px">Ground Truth Video</p>
+								</div> -->
+								<div style="width: 1000px; margin: auto;">
+									<div class="row justify-content-sm-center" style="display: flex; width: 1000px; height: 40px; margin-left: 0px">
+										<div style="flex: 0 0 33%; text-align: center;">
+											<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Input Mesh</p>
+										</div>
+										<div style="flex: 0 0 33%; text-align: center;">
+											<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Textured Mesh</p>
+										</div>
+										<div style="flex: 0 0 33%; text-align: center;">
+											<p style="font-family: Chalkduster; font-size: 16px; margin: 0;">Generated Video</p>
+										</div>
+									</div>
+									<video autoplay="autoplay" controls="controls" loop="loop" muted="muted" src="./all_results/our_results_audio/chemistry.mp4" style="width:1000px; border: 5px solid #000;" type="video/mp4"></video>
+									<p style="font-family: Chalkduster; font-size: 20px; margin-top: 5px;">Chemistry</p>
+								</div>
+							</th>
+							</tr>
+						
+						
 						<tr> <td><br></td> </tr>
 		
 						
